@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Alpha Method - Teste Gratuito</title>
+    <title>Protocolo del Hercules - Teste Gratuito</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #ef4444; --bg: #050505; --card: #111111; --text: #ffffff; --green: #22c55e; }
@@ -45,7 +45,7 @@
         .privacy-note { background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); padding: 12px; border-radius: 10px; margin-bottom: 20px; font-size: 12px; text-align: center; color: var(--green); font-weight: 700; }
         
         .options { display: grid; gap: 12px; }
-        .option-btn { background: rgba(255, 255, 255, 0.05); border: 2px solid #262626; color: var(--text); padding: 18px; border-radius: 12px; cursor: pointer; font-weight: 700; transition: all 0.2s; font-size: 16px; text-align: left; }
+        .option-btn { background: rgba(255, 255, 255, 0.05); border: 2px solid #262626; color: var(--text); padding: 18px; border-radius: 12px; cursor: pointer; font-weight: 700; transition: all 0.2s; font-size: 15px; text-align: left; }
         .option-btn:hover { border-color: var(--primary); background: rgba(239, 68, 68, 0.1); transform: translateX(5px); }
         
         .cm-input-box { background: rgba(34, 197, 94, 0.1); border: 2px solid var(--green); padding: 25px; border-radius: 16px; margin: 25px 0; text-align: center; }
@@ -79,33 +79,29 @@
         .carousel-dot.active { background: var(--green); }
         
         .result-box { background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0.05) 100%); border: 2px solid var(--green); padding: 25px; border-radius: 16px; margin: 25px 0; text-align: center; animation: pulse 2s infinite; }
-        
         @keyframes pulse { 0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); } 50% { box-shadow: 0 0 40px rgba(34, 197, 94, 0.6); } }
-        
         .result-number { font-size: 56px; font-weight: 900; color: var(--green); margin: 15px 0; text-shadow: 0 0 30px rgba(34, 197, 94, 0.6); }
-        
         .result-label { font-size: 14px; color: #ccc; text-transform: uppercase; font-weight: 700; }
-        
         .result-detail { background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 12px; margin: 20px 0; }
         .result-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         .result-row:last-child { margin-bottom: 0; }
         .result-row-label { font-size: 14px; color: #999; }
         .result-row-value { font-size: 20px; font-weight: 900; color: var(--green); }
-        
-        .benefit { display: flex; align-items: flex-start; margin-bottom: 15px; font-size: 15px; font-weight: 700; line-height: 1.4; }
-        .benefit span { color: var(--green); margin-right: 12px; font-size: 20px; flex-shrink: 0; }
-        
-        .bonus-section { background: rgba(251, 191, 36, 0.1); border: 2px solid #fbbf24; padding: 20px; border-radius: 16px; margin: 25px 0; }
-        .bonus-title { font-size: 16px; font-weight: 900; color: #fbbf24; text-transform: uppercase; margin-bottom: 15px; text-align: center; }
-        .bonus-item { background: rgba(0, 0, 0, 0.3); padding: 12px 15px; border-radius: 10px; margin-bottom: 10px; display: flex; align-items: center; }
-        .bonus-item:last-child { margin-bottom: 0; }
-        .bonus-icon { font-size: 24px; margin-right: 12px; }
-        .bonus-content { flex: 1; }
-        .bonus-name { font-size: 13px; font-weight: 900; color: #fff; margin-bottom: 3px; }
-        .bonus-desc { font-size: 11px; color: #999; line-height: 1.3; }
-        
-        .guarantee { background: rgba(34, 197, 94, 0.15); border: 1px solid var(--green); padding: 15px; border-radius: 12px; text-align: center; margin: 20px 0; font-weight: 700; color: var(--green); }
-        
+
+        /* CTA / OFERTA */
+        .plan-header { background: linear-gradient(135deg, rgba(239,68,68,0.2), rgba(239,68,68,0.05)); border: 2px solid var(--primary); border-radius: 16px; padding: 20px; text-align: center; margin-bottom: 25px; }
+        .plan-tag { font-size: 11px; font-weight: 900; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+        .plan-name { font-size: 26px; font-weight: 900; color: #fff; margin-bottom: 6px; }
+        .plan-sub { font-size: 13px; color: #999; }
+
+        .benefit { display: flex; align-items: flex-start; margin-bottom: 13px; font-size: 14px; font-weight: 700; line-height: 1.4; color: #fff; }
+        .benefit span { color: var(--green); margin-right: 10px; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+        .guarantee-box { background: linear-gradient(135deg, rgba(34,197,94,0.15), rgba(34,197,94,0.05)); border: 2px solid var(--green); padding: 18px; border-radius: 14px; text-align: center; margin: 20px 0; }
+        .guarantee-icon { font-size: 36px; margin-bottom: 8px; }
+        .guarantee-title { font-size: 15px; font-weight: 900; color: var(--green); margin-bottom: 5px; }
+        .guarantee-desc { font-size: 12px; color: #999; line-height: 1.4; }
+
         .testimonials-carousel { position: relative; height: 60px; overflow: hidden; margin: 20px 0; }
         .testimonial-slide { position: absolute; width: 100%; text-align: center; opacity: 0; transition: opacity 0.8s ease; padding: 12px; background: rgba(255, 255, 255, 0.03); border-radius: 12px; }
         .testimonial-slide.active { opacity: 1; }
@@ -117,38 +113,20 @@
 </head>
 <body>
     <div class="container">
+
         <!-- TELA 1: GANCHO -->
         <div id="screen-1" class="screen active">
             <div class="card">
                 <div class="badge" style="display: block; text-align: center;">⚡ MÉTODO VALIDADO POR +50 MIL HOMENS</div>
-                
                 <h1 class="headline" style="text-align: center;">Descubra Quantos CM Você Pode Aumentar em 30 Dias</h1>
-                
                 <p class="subheadline" style="text-align: center;">Teste rápido baseado em ciência. 100% confidencial.</p>
-                
                 <div class="stats-row">
-                    <div class="stat-box">
-                        <div class="stat-number">50K+</div>
-                        <div class="stat-label">Homens</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">4.9★</div>
-                        <div class="stat-label">Avaliação</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">94%</div>
-                        <div class="stat-label">Aprovam</div>
-                    </div>
+                    <div class="stat-box"><div class="stat-number">50K+</div><div class="stat-label">Homens</div></div>
+                    <div class="stat-box"><div class="stat-number">4.9★</div><div class="stat-label">Avaliação</div></div>
+                    <div class="stat-box"><div class="stat-number">94%</div><div class="stat-label">Aprovam</div></div>
                 </div>
-                
-                <div class="privacy-note">
-                    🔒 TOTALMENTE CONFIDENCIAL - Suas respostas são 100% anônimas
-                </div>
-                
-                <div class="urgency-box">
-                    🔥 1.247 homens fizeram este teste nas últimas 24 horas
-                </div>
-                
+                <div class="privacy-note">🔒 TOTALMENTE CONFIDENCIAL - Suas respostas são 100% anônimas</div>
+                <div class="urgency-box">🔥 1.247 homens fizeram este teste nas últimas 24 horas</div>
                 <button class="btn" onclick="startQuiz()">⚡ DESCOBRIR MEU POTENCIAL AGORA</button>
             </div>
         </div>
@@ -157,14 +135,10 @@
         <div id="screen-2" class="screen">
             <div class="card">
                 <div class="badge">🔒 100% CONFIDENCIAL</div>
-                
                 <div class="progress-bar-container">
                     <div class="progress-text" id="progress-text">13% COMPLETO</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progress-fill"></div>
-                    </div>
+                    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
                 </div>
-                
                 <div id="quiz-content"></div>
             </div>
         </div>
@@ -173,71 +147,49 @@
         <div id="screen-3" class="screen">
             <div class="card">
                 <div class="badge">📏 MEDIÇÃO PERSONALIZADA</div>
-                
-                <h2 class="headline" style="text-align: center;">Qual o tamanho atual do seu pênis ERETO?</h2>
-                
-                <p style="text-align: center; color: #999; font-size: 14px; margin-bottom: 25px;">
-                    Seja honesto para calcularmos seu potencial REAL de crescimento
-                </p>
-                
+                <h2 class="headline" style="text-align: center;">Qual o tamanho atual do seu cajado ERETO?</h2>
+                <p style="text-align: center; color: #999; font-size: 14px; margin-bottom: 25px;">Seja honesto para calcularmos seu potencial REAL de crescimento</p>
                 <div class="cm-input-box">
-                    <div style="font-size: 16px; font-weight: 900; color: var(--green); margin-bottom: 10px;">
-                        SEU TAMANHO ATUAL (ERETO)
-                    </div>
-                    <input type="number" id="current-size" class="cm-input" placeholder="15" min="5" max="25" step="0.5">
+                    <div style="font-size: 16px; font-weight: 900; color: var(--green); margin-bottom: 10px;">SEU TAMANHO ATUAL (ERETO)</div>
+                    <input type="number" id="current-size" class="cm-input" placeholder="15" min="5" max="30" step="0.5">
                     <div class="cm-label">centímetros</div>
                 </div>
-                
-                <div class="privacy-note">
-                    🔒 Essas informações são 100% confidenciais e usadas apenas para calcular seu resultado
-                </div>
-                
+                <div class="privacy-note">🔒 Essas informações são 100% confidenciais e usadas apenas para calcular seu resultado</div>
                 <button class="btn" onclick="calculateResult()">📊 CALCULAR MEU POTENCIAL</button>
             </div>
         </div>
 
-        <!-- TELA 4: ANÁLISE BONITA + DEPOIMENTOS EM CARROSSEL -->
+        <!-- TELA 4: ANÁLISE + DEPOIMENTOS -->
         <div id="screen-4" class="screen">
             <div class="card">
                 <div class="badge">🔬 ANÁLISE CIENTÍFICA</div>
-                
                 <div class="analysis-header">
                     <div class="analysis-icon">🧬</div>
                     <h2 class="headline" style="margin: 0;">Processando Seus Dados...</h2>
                     <p style="color: #999; font-size: 13px; margin-top: 8px;">Analisando compatibilidade com o protocolo</p>
                 </div>
-                
                 <div class="analysis-bar">
                     <div class="analysis-label">
                         <span>🩸 Fluxo Sanguíneo Cavernoso</span>
                         <span id="status-1" style="color: var(--primary);">⏳ Analisando</span>
                     </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" id="bar-1"></div>
-                    </div>
+                    <div class="bar-container"><div class="bar-fill" id="bar-1"></div></div>
                 </div>
-                
                 <div class="analysis-bar">
                     <div class="analysis-label">
                         <span>💪 Densidade Tecidual</span>
                         <span id="status-2" style="color: #666;">⏳ Aguardando</span>
                     </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" id="bar-2"></div>
-                    </div>
+                    <div class="bar-container"><div class="bar-fill" id="bar-2"></div></div>
                 </div>
-                
                 <div class="analysis-bar">
                     <div class="analysis-label">
                         <span>🎯 Compatibilidade Protocolo</span>
                         <span id="status-3" style="color: #666;">⏳ Aguardando</span>
                     </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" id="bar-3"></div>
-                    </div>
+                    <div class="bar-container"><div class="bar-fill" id="bar-3"></div></div>
                 </div>
 
-                <!-- CARROSSEL DE DEPOIMENTOS -->
                 <div class="testimonials-analysis-carousel">
                     <div class="testimonials-track" id="testimonials-track">
                         <div class="testimonial-card">
@@ -340,14 +292,13 @@
                         <button class="carousel-dot" onclick="goToSlide(7)"></button>
                     </div>
                 </div>
-                
+
                 <div id="result-container" style="display:none;">
                     <div class="result-box">
                         <div class="result-label">🎉 SEU RESULTADO PERSONALIZADO:</div>
                         <div class="result-number" id="final-size">18cm</div>
                         <div class="result-label">Tamanho que você pode atingir</div>
                     </div>
-                    
                     <div class="result-detail">
                         <div class="result-row">
                             <div class="result-row-label">Tamanho Atual:</div>
@@ -362,78 +313,45 @@
                             <div class="result-row-value" id="new-size-display" style="font-size: 28px;">18cm</div>
                         </div>
                     </div>
-                    
                     <p style="text-align: center; color: #ccc; font-size: 14px; margin-bottom: 20px;">
                         Baseado no seu perfil, você tem <strong style="color: var(--green);">ALTA compatibilidade</strong> com o método!
                     </p>
-                    
                     <button class="btn" onclick="goToOffer()">🚀 QUERO ALCANÇAR ESSE TAMANHO</button>
                 </div>
             </div>
         </div>
 
-        <!-- TELA 5: OFERTA (SEM PREÇO) -->
+        <!-- TELA 5: OFERTA -->
         <div id="screen-5" class="screen">
             <div class="card">
-                <div class="badge" style="display: block; text-align: center;">🔥 ACESSO LIBERADO</div>
-                
-                <h1 class="headline" style="text-align: center; font-size: 28px;">De <span id="offer-current">15cm</span> Para <span style="color: var(--green);" id="offer-new">18cm</span></h1>
-                
-                <p style="text-align: center; font-size: 14px; color: #ccc; margin: 15px 0;">
-                    Acesso vitalício ao método completo + bônus exclusivos
-                </p>
-                
-                <div style="margin: 30px 0;">
-                    <div class="benefit"><span>✓</span> Protocolo Completo Alpha Method (crescimento permanente)</div>
-                    <div class="benefit"><span>✓</span> Resultados visíveis em 30 dias (método científico)</div>
-                    <div class="benefit"><span>✓</span> Controle total da ejaculação (dure quanto quiser)</div>
-                    <div class="benefit"><span>✓</span> Ereções mais fortes e rígidas (100% natural)</div>
-                    <div class="benefit"><span>✓</span> Acesso vitalício + suporte direto</div>
+
+                <!-- CABEÇALHO DO PLANO -->
+                <div class="plan-header">
+                    <div class="plan-tag">🏆 Acesso Completo ao Método</div>
+                    <div class="plan-name">Plano Premium</div>
+                    <div class="plan-sub">Protocolo Completo + Acesso Premium</div>
                 </div>
-                
-                <div class="bonus-section">
-                    <div class="bonus-title">🎁 BÔNUS EXCLUSIVOS INCLUSOS</div>
-                    
-                    <div class="bonus-item">
-                        <div class="bonus-icon">📱</div>
-                        <div class="bonus-content">
-                            <div class="bonus-name">BÔNUS #1: App de Acompanhamento</div>
-                            <div class="bonus-desc">Rastreie sua evolução com gráficos e lembretes diários</div>
-                        </div>
-                    </div>
-                    
-                    <div class="bonus-item">
-                        <div class="bonus-icon">🍎</div>
-                        <div class="bonus-content">
-                            <div class="bonus-name">BÔNUS #2: Dieta da Virilidade</div>
-                            <div class="bonus-desc">Alimentos que aumentam testosterona + cardápio pronto</div>
-                        </div>
-                    </div>
-                    
-                    <div class="bonus-item">
-                        <div class="bonus-icon">💪</div>
-                        <div class="bonus-content">
-                            <div class="bonus-name">BÔNUS #3: Treino Kegel Pro</div>
-                            <div class="bonus-desc">Exercícios para controle total e ereções mais fortes</div>
-                        </div>
-                    </div>
-                    
-                    <div class="bonus-item">
-                        <div class="bonus-icon">🎯</div>
-                        <div class="bonus-content">
-                            <div class="bonus-name">BÔNUS #4: Técnicas de Controle</div>
-                            <div class="bonus-desc">Métodos para durar 3x mais (usados por profissionais)</div>
-                        </div>
-                    </div>
+
+                <!-- BENEFÍCIOS -->
+                <div style="margin-bottom: 25px;">
+                    <div class="benefit"><span>✓</span> Método de excelência: do básico ao avançado</div>
+                    <div class="benefit"><span>✓</span> Manuais exclusivos (iniciante e avançado)</div>
+                    <div class="benefit"><span>✓</span> Vídeo Aulas detalhadas para aplicação imediata</div>
+                    <div class="benefit"><span>✓</span> Foco em crescimento, espessura e performance</div>
+                    <div class="benefit"><span>✓</span> Suporte 24h + Comunidade VIP</div>
+                    <div class="benefit"><span>🎁</span> Bônus Especial: Guia da Atração</div>
+                    <div class="benefit"><span>♾️</span> Acesso Vitalício (sem mensalidades)</div>
                 </div>
-                
-                <div class="guarantee" style="font-size: 14px; padding: 12px;">
-                    🛡️ GARANTIA INCONDICIONAL DE 30 DIAS<br>
-                    <span style="font-size: 12px; color: #ccc; display: block; margin-top: 5px;">Não funcionou? Devolvemos 100% do seu dinheiro</span>
+
+                <!-- GARANTIA -->
+                <div class="guarantee-box">
+                    <div class="guarantee-icon">🛡️</div>
+                    <div class="guarantee-title">Garantia de 7 Dias — Risco Zero</div>
+                    <div class="guarantee-desc">Não ficou satisfeito? Devolvemos 100% do seu dinheiro.<br>Sem perguntas, sem burocracia.</div>
                 </div>
-                
-                <button class="btn" onclick="checkout()" style="font-size: 19px; padding: 22px;">🔒 GARANTIR MEU ACESSO AGORA</button>
-                
+
+                <button class="btn" onclick="checkout()" style="font-size: 19px; padding: 22px; margin-bottom: 15px;">🔒 GARANTIR MEU ACESSO AGORA</button>
+
                 <div class="testimonials-carousel" id="testimonials">
                     <div class="testimonial-slide active">
                         <div class="testimonial-quote">💬 "Aumentei 3cm em 6 semanas. Melhor investimento!"</div>
@@ -452,17 +370,16 @@
                         <div class="testimonial-author">@lucas_ba, 29 anos</div>
                     </div>
                 </div>
-                
-                <div class="security-footer">
-                    🔒 Pagamento 100% seguro e discreto
-                </div>
+
+                <div class="security-footer">🔒 Pagamento 100% seguro e discreto</div>
             </div>
         </div>
+
     </div>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, setDoc, updateDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const app = initializeApp({
             apiKey: "AIzaSyB-GPkmK_iNQuu_96NsWBEmnZA1LhiSRR4",
@@ -474,21 +391,62 @@
         });
 
         const db = getFirestore(app);
-        let sid = localStorage.getItem('alpha_sid');
+        let sid = localStorage.getItem('hercules_sid');
         if (!sid) {
             sid = 's_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-            localStorage.setItem('alpha_sid', sid);
+            localStorage.setItem('hercules_sid', sid);
         }
 
+        // ── NOVAS PERGUNTAS ───────────────────────────────────────────
         const QUESTIONS = [
-            { id: 'tamanho', q: '📏 Qual o tamanho do seu pênis ERETO?', o: ['Menos de 10cm', 'Entre 10-13cm', 'Entre 13-16cm', 'Mais de 16cm'], points: [10, 8, 5, 3] },
-            { id: 'duracao', q: '⏱️ Quanto tempo você DURA na cama?', o: ['Menos de 3 minutos', 'Entre 3-7 minutos', 'Entre 7-15 minutos', 'Mais de 15 minutos'], points: [10, 7, 4, 2] },
-            { id: 'satisfacao', q: '😔 Como você se sente com seu desempenho?', o: ['Muito insatisfeito (ela reclama)', 'Insatisfeito (sei que posso melhorar)', 'Razoável (funciona mas quero mais)', 'Satisfeito (mas sempre dá pra evoluir)'], points: [10, 8, 6, 4] },
-            { id: 'idade', q: '📅 Qual sua idade?', o: ['18-25 anos', '26-35 anos', '36-45 anos', '46+ anos'], points: [10, 8, 6, 5] },
-            { id: 'alimentacao', q: '🍎 Como está sua alimentação?', o: ['Muito saudável', 'Razoável', 'Ruim', 'Péssima'], points: [10, 7, 4, 2] },
-            { id: 'sono', q: '😴 Quantas horas você dorme por noite?', o: ['7-9 horas (qualidade boa)', '6-7 horas (acordo cansado)', '5-6 horas (durmo pouco)', 'Menos de 5 horas'], points: [10, 7, 4, 2] },
-            { id: 'tentou', q: '💊 Já tentou algo antes?', o: ['Sim, não funcionou', 'Sim, funcionou pouco', 'Nunca tentei nada', 'Tentei várias coisas'], points: [7, 8, 10, 5] },
-            { id: 'prioridade', q: '🎯 Resolver isso é sua PRIORIDADE máxima?', o: ['Sim, urgente!', 'Sim, mas posso esperar', 'Apenas curiosidade', 'Não é prioridade'], points: [10, 7, 4, 2] }
+            {
+                id: 'tamanho',
+                q: '📏 Qual é o tamanho aproximado do seu cajado ereto?',
+                o: ['Menos de 12 cm', 'De 12 a 14 cm', 'De 14 a 16 cm', 'Mais de 16 cm'],
+                points: [10, 8, 5, 3]
+            },
+            {
+                id: 'masturbacao',
+                q: '🔥 Com que frequência você "se masturba"?',
+                o: ['Mais de uma vez por dia', 'Todos os dias', 'De 2 a 4 vezes por semana', 'Raramente'],
+                points: [4, 6, 9, 10]
+            },
+            {
+                id: 'erecao_matinal',
+                q: '🌅 Você costuma acordar com o cajado ereto?',
+                o: ['Quase nunca', 'Raramente', 'Às vezes', 'Quase sempre'],
+                points: [10, 8, 6, 3]
+            },
+            {
+                id: 'metodo_natural',
+                q: '🌿 Você já tentou algum método natural para aumentar o cajado?',
+                o: ['Nunca ouvi falar', 'Já ouvi falar, mas nunca tentei', 'Já tentei, mas sem constância', 'Sim, fiz com disciplina'],
+                points: [10, 8, 6, 4]
+            },
+            {
+                id: 'dieta',
+                q: '🍽️ Como é sua dieta diária?',
+                o: ['Apenas comida processada (refrigerantes, fast food, doces)', '50% comida processada, 50% saudável', 'Tento comer bem na maioria das refeições', 'Dieta natural e equilibrada'],
+                points: [10, 7, 4, 2]
+            },
+            {
+                id: 'sono',
+                q: '😴 Quantas horas você dorme por noite?',
+                o: ['Menos de 5 horas', 'De 5 a 6 horas', 'De 6 a 7 horas', '8 horas ou mais'],
+                points: [10, 7, 5, 3]
+            },
+            {
+                id: 'exercicio',
+                q: '💪 Você pratica atividade física?',
+                o: ['Nunca', 'Uma vez por semana ou menos', 'De 2 a 3 vezes por semana', '4 vezes por semana ou mais'],
+                points: [10, 7, 4, 2]
+            },
+            {
+                id: 'idade',
+                q: '📅 Qual é a sua idade?',
+                o: ['Entre 19 e 27 anos', 'Entre 28 e 36 anos', 'Mais de 36 anos'],
+                points: [8, 7, 6]
+            }
         ];
 
         let currentQ = 0;
@@ -498,7 +456,7 @@
         let growthPotential = 0;
         let finalSize = 0;
 
-        // Carrossel de depoimentos (tela 4)
+        // Carrossel tela 4
         let currentSlide = 0;
         let carouselInterval = null;
         const totalSlides = 8;
@@ -518,18 +476,36 @@
             }, 3500);
         }
 
+        // Firebase
+        let initReady = false;
+        let initQueue = [];
+
         async function track(e, d = {}) {
+            if (!initReady) { initQueue.push({ e, d }); return; }
             try {
-                await updateDoc(doc(db, 'sessions', sid), {
+                await setDoc(doc(db, 'sessions', sid), {
                     [`events.${e}`]: serverTimestamp(),
                     lastActivity: serverTimestamp(),
                     ...d
-                });
+                }, { merge: true });
             } catch (err) {}
         }
 
+        async function flushQueue() {
+            for (const item of initQueue) {
+                try {
+                    await setDoc(doc(db, 'sessions', sid), {
+                        [`events.${item.e}`]: serverTimestamp(),
+                        lastActivity: serverTimestamp(),
+                        ...item.d
+                    }, { merge: true });
+                } catch (err) {}
+            }
+            initQueue = [];
+        }
+
         window.startQuiz = function() {
-            track('quiz_started');
+            track('quiz_started', { currentStep: 'quiz' });
             showScreen(2);
             renderQuestion();
         };
@@ -542,7 +518,9 @@
             document.getElementById('quiz-content').innerHTML = `
                 <div class="question">${q.q}</div>
                 <div class="options">
-                    ${q.o.map((opt, idx) => `<button class="option-btn" onclick="selectAnswer(${idx}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>`).join('')}
+                    ${q.o.map((opt, idx) =>
+                        `<button class="option-btn" onclick="selectAnswer(${idx}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>`
+                    ).join('')}
                 </div>
             `;
         }
@@ -552,13 +530,13 @@
             answers[q.id] = answer;
             totalPoints += q.points[optionIndex];
             const progress = currentQ + 1;
-            track('quiz_answer', { question: q.q, answer: answer, quizProgress: progress });
-            updateDoc(doc(db, 'sessions', sid), { quizProgress: progress });
+            track('quiz_answer', { question: q.id, answer, quizProgress: progress });
+            setDoc(doc(db, 'sessions', sid), { quizProgress: progress, lastActivity: serverTimestamp() }, { merge: true });
             currentQ++;
             if (currentQ < QUESTIONS.length) {
                 renderQuestion();
             } else {
-                track('quiz_completed', { totalScore: totalPoints });
+                track('quiz_completed', { totalScore: totalPoints, currentStep: 'analise' });
                 showScreen(3);
             }
         };
@@ -566,16 +544,16 @@
         window.calculateResult = function() {
             const input = document.getElementById('current-size').value;
             currentSize = parseFloat(input);
-            if (!currentSize || currentSize < 5 || currentSize > 25) {
-                alert('Por favor, insira um valor válido entre 5 e 25 cm');
+            if (!currentSize || currentSize < 5 || currentSize > 30) {
+                alert('Por favor, insira um valor válido entre 5 e 30 cm');
                 return;
             }
             let growthRange;
-            if (totalPoints >= 65) growthRange = [5, 7];
+            if (totalPoints >= 65)      growthRange = [5, 7];
             else if (totalPoints >= 50) growthRange = [4, 6];
             else if (totalPoints >= 35) growthRange = [3, 5];
             else if (totalPoints >= 20) growthRange = [2, 4];
-            else growthRange = [2, 3];
+            else                        growthRange = [2, 3];
             growthPotential = growthRange[1];
             finalSize = currentSize + growthPotential;
             track('size_input', { currentSize, growthPotential, finalSize, score: totalPoints });
@@ -622,27 +600,32 @@
         }
 
         window.goToOffer = function() {
-            track('offer_viewed');
+            track('offer_viewed', { currentStep: 'oferta' });
             if (carouselInterval) clearInterval(carouselInterval);
-            document.getElementById('offer-current').innerText = currentSize.toFixed(1) + 'cm';
-            document.getElementById('offer-new').innerText = finalSize.toFixed(1) + 'cm';
             showScreen(5);
             startTestimonialsCarousel();
         };
 
         function startTestimonialsCarousel() {
             const slides = document.querySelectorAll('.testimonial-slide');
-            let currentSlide = 0;
+            let idx = 0;
             setInterval(() => {
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].classList.add('active');
+                slides[idx].classList.remove('active');
+                idx = (idx + 1) % slides.length;
+                slides[idx].classList.add('active');
             }, 4000);
         }
 
         window.checkout = function() {
-            track('checkout');
-            window.location.href = `https://pay.wiapy.com/elbyXqblP2?utm_source=${sid}&external_id=${sid}`;
+            track('checkout', { currentStep: 'checkout' });
+            setDoc(doc(db, 'sessions', sid), {
+                'events.checkout': serverTimestamp(),
+                currentStep: 'checkout',
+                lastActivity: serverTimestamp()
+            }, { merge: true });
+            setTimeout(() => {
+                window.location.href = `https://pay.wiapy.com/elbyXqblP2?utm_source=${sid}&external_id=${sid}`;
+            }, 400);
         };
 
         function showScreen(num) {
@@ -658,14 +641,17 @@
                     enteredAt: serverTimestamp(),
                     lastActivity: serverTimestamp(),
                     currentStep: 'hook',
-                    status: 'active',
-                    source: 'tiktok_optimized',
+                    source: 'hercules_funil',
                     quizProgress: 0,
-                    events: {},
-                    answers: {},
-                    conversion: { clickedCheckout: false }
-                });
-            } catch (err) {}
+                    'events.page_view': serverTimestamp(),
+                    answers: {}
+                }, { merge: true });
+                initReady = true;
+                await flushQueue();
+            } catch (err) {
+                initReady = true;
+                await flushQueue();
+            }
         }
 
         init();
